@@ -50,6 +50,14 @@ main{
     padding: 12px 0;
 }
 
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
 .btn{
     background: black;
     color: white;
@@ -58,6 +66,11 @@ main{
     border-radius: 6px;
     cursor: pointer;
 }
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
 footer{
     font-size: 12px;
     background-color: black;
