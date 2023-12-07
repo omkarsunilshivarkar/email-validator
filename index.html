@@ -9,7 +9,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">iValidate</div>
+            <div class="logo">
+                <img src="img/email.svg" alt="">
+                <span>iValidate</span>
+            </div>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
@@ -18,10 +21,34 @@
         </nav>
     </header>
     <main>
-        
+        <div class="container">
+            <h1>Enter Your Email To Validate</h1>
+            <form action="/submit" method="post">
+                <!-- Text input for username -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+            
+                <!-- Password input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+            
+                <!-- Radio buttons for gender -->
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+            
+                <!-- Submit button -->
+                <input class="btn" type="submit" value="Submit">
+              </form>
+        </div>
     </main>
     <footer>
-
+        Copyright | iValidate.com | All Rights Reserved
     </footer>
     <script src="js/index.js"></script>
 </body>
